@@ -1,0 +1,47 @@
+// {
+//   "compilerOptions": {
+//     "target": "esnext",
+//     "allowJs": true,
+//     "skipLibCheck": true,
+//     "esModuleInterop": true,
+//     "allowSyntheticDefaultImports": true,
+//     "strict": true,
+//     "forceConsistentCasingInFileNames": true,
+//     "module": "esnext",
+//     "moduleResolution": "node",
+//     "resolveJsonModule": true,
+//     "jsx": "react",
+//     "isolatedModules": true,
+//   },
+//   "include": [
+//     "src",
+//     "package"
+//   ]
+// }
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "es5",                          /* 编译的目标是什么版本 */
+    "module": "commonjs",                     /* 指定生成哪个模块系统代码 */
+    "moduleResolution": "node",            /* 指定模块解析方式 */
+    "allowSyntheticDefaultImports": true,  
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "strict": true,                           /* Enable all strict type-checking options. */
+    "noUnusedLocals": false,                /* 若有未使用的局部变量则抛错 */
+    "noUnusedParameters": false,            /* 若有未使用有参数则抛错 */
+
+    "jsx": "preserve",                     /* 在.tsx文件里支持jsx */
+    "jsxFactory": "React.createElement",   /* 指定生成目标为 react JSX时，使用jSX工厂函数 */
+    "experimentalDecorators": false,        /* 启用实验性的ES装饰器 */    
+    "emitDecoratorMetadata": false,
+
+    "baseUrl": "./src",
+    "paths": {
+      "~/*": ["*"]
+    },
+
+    "typeRoots": ["node_modules/@types", "types"]
+  },
+  "exclude": ["node_modules/**"]
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.0/jquery.js"></script>
+    <script>
+         if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function (position) {
+            current_location_lat = position.coords.latitude;
+            current_location_lon = position.coords.longitude;
+           }, function (error) {
+//if error occurred by google api
+              $.getJSON("http://ipinfo.io", function (ipinfo) {
+                var latLong = ipinfo.loc.split(",");
+                current_location_lat = latLong[0];
+                current_location_lon = latLong[1];
+                 });
+            });
+
+    } else {
+        // Browser doesn't support Geolocation
+        alert("Error: Your browser doesn\'t support geolocation");
+    }
+    </script>
+</body>
+</html>
