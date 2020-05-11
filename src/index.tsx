@@ -7,7 +7,8 @@ import './index.css'
 function App () {
     return (
         <div className="app">
-            <Button name="button"/>
+            {/* <Button name="button"/> */}
+            <Button/>
         </div>)
 }
 
