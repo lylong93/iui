@@ -6,7 +6,7 @@ const useClick = () => {
     const click =()=> {
         change(true)
     }
-    return[flag,change]
+    return[flag,click,change]
 }
 
 export default useClick
