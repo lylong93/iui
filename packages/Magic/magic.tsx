@@ -161,9 +161,7 @@ var params :any= {
     var controls = new OrbitControls( camera, renderer.domElement );
     controls.minDistance = 1;
     controls.maxDistance = 20;
-
-
-
+    
     // var gui = new dat.GUI();
 
     // gui.add( params, 'hemiIrradiance', Object.keys( hemiLuminousIrradiances ) );
@@ -252,7 +250,6 @@ const  Gl = () =>  {
         animate();
        }
        
-
     })
     return (
         <div ref={El} id='container'></div>

@@ -1,15 +1,12 @@
-import {Button,Radio} from '../packages/index'
+import {Button,Radio,Magic,World} from '../packages/index'
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css'
-// import test from './test'
 
 function App () {
     return (
-        <div className="app">
-            {/* <Button name="button"/> */}
-            <Button/>
-        </div>)
+            <World></World>
+        )
 }
 
 ReactDOM.render(

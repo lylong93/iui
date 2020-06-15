@@ -61,7 +61,6 @@ function init() {
     //   color: 0x000000
     // } );
 
-
     // bulbLight.add( new THREE.Mesh( bulbGeometry, bulbMat ) );
     // // bulbLight.position.set( -6, 2, 0 );
     // bulbLight.castShadow = true;
@@ -70,7 +69,6 @@ function init() {
     var light = new THREE.AmbientLight( 0x404040 ); // soft white light
     scene.add( light );
 
-    
     hemiLight = new THREE.HemisphereLight( 0xddeeff, 0x0f0e0d, 0.02 );
     scene.add( hemiLight );
 
@@ -130,7 +128,6 @@ function init() {
     //         //保存初始坐标
     //         value.userData.oldPs = value.getWorldPosition(new THREE.Vector3())
     //         // value.position.copy(new THREE.Vector3(1,1,2))
-
     //     // }
     // });
 
