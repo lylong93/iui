@@ -1,8 +1,9 @@
 import React,{useRef,useEffect} from "react";
-import './index.css'
+import btnClass from './style'
+import './style.scss'
 function  World () {
     return (
-        <div className="world">world</div>
+        <div className={btnClass}>world</div>
     )
 } 
 

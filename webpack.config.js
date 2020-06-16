@@ -25,10 +25,34 @@ module.exports = {
               },
             }]
           },
-      {
-        test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
-      }
+      // {
+      //   test: /\.css$/i,
+      //   use: ['style-loader', 'css-loader'],
+      // }
+      { 
+        test: /\.scss$/,
+        // use: [
+        //   'style-loader',
+        //   // { loader: 'postcss-loader', options: { parser: 'sugarss', exec: true } }
+        //   { loader: 'css-loader', options: { modules: true, importLoaders: 1 } },
+        //   { loader: 'postcss-loader', options: { parser: 'postcss-js' } }
+        // ]
+        use:[
+          'style-loader',
+          'css-loader',
+          'sass-loader',
+          {
+            loader:'postcss-loader',  
+            options: {
+              ident: 'postcss',
+              plugins: [
+                require('tailwindcss'),
+                require('autoprefixer'),
+              ],
+            },
+          }
+        ]
+      },
     ]
     // rules: [
     //   {

@@ -1,7 +1,7 @@
 import {Button,Radio,Magic,World} from '../packages/index'
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css'
+import './index.scss'
 
 function App () {
     return (

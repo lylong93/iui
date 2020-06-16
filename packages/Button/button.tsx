@@ -1,7 +1,7 @@
 import React,{Component} from 'react'
 import classNames from 'classnames';
 import useHover from './useHove'
-import './index.css'
+// import './index.css'
 
 interface Props {
     name:string
