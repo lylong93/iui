@@ -1,11 +1,19 @@
 import {Button,Radio,Magic,World} from '../packages/index'
-import React from 'react';
+import React,{useState} from 'react';
 import ReactDOM from 'react-dom';
-import './index.scss'
-
+import './index.scss';
+import defalut from '../style/default.json';
+const {Header,Main,Footer} = World
 function App () {
+    const cha = () => {
+        document.body.style.setProperty('--main-bg-color', defalut['--main-bg-color']); 
+    }
     return (
-            <World></World>
+            <World>
+                <Header></Header>
+                <Main></Main>
+                <Footer></Footer>
+            </World>
         )
 }
 
