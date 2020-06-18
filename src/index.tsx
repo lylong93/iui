@@ -3,18 +3,21 @@ import React,{useState} from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
 import defalut from '../style/default.json';
-const {Header,Main,Footer} = World
+const {Header,Main,Footer,Aside,Layout} = World
 function App () {
     const cha = () => {
         document.body.style.setProperty('--main-bg-color', defalut['--main-bg-color']); 
     }
     return (
-            <World>
+        <World>
+            <Layout>
                 <Header></Header>
+                <Aside></Aside>
                 <Main></Main>
-                <Footer></Footer>
-            </World>
-        )
+            </Layout>
+            <Footer></Footer>
+        </World>
+    )
 }
 
 ReactDOM.render(
