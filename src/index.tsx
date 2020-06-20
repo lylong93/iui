@@ -10,8 +10,8 @@ function App () {
     }
     return (
         <World>
+             <Header></Header>
             <Layout>
-                <Header></Header>
                 <Aside></Aside>
                 <Main></Main>
             </Layout>

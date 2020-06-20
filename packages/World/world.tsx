@@ -6,10 +6,11 @@ import styleClass from './style.scss.json'
 
 const creat = ({name}:any) => {
     const style = classNames(styleClass[name])
+    let falg = true
     return (props:any) => {
         return (
             <div className={style}>
-                {name}
+                {name==='Layout' ? '' :name}
                 {props.children}
             </div>
         )

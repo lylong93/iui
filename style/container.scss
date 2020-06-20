@@ -3,6 +3,8 @@
 .container {
     height: 100vh;
     background-color: var(--main-bg-color);
+    display: flex;
+    flex-direction: column;
 }
 .qpp {
     height: 100vh;
@@ -14,14 +16,22 @@
 }
 .Layout {
     height: 100%;
+    border:1px solid blue;
+    display: flex;
+    // flex-direction: column;
 }
 .Main{
-    // min-height:500px;
+    height: 100%;
+    width: 100%;
+    border:1px solid black;
 }
 .Aside {
+    position: relative;
+    height: 100%;
+    left: 0;
+    top:0;
     width: 50px;
     border:1px solid black;
-    height: 100%;
 }
 .Footer{
     background-color: red;
