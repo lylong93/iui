@@ -12,7 +12,7 @@
 }
 
 .Header{
-    background-color: red;
+    background-color: rgb(165, 155, 155);
 }
 .Layout {
     height: 100%;
@@ -26,13 +26,13 @@
     border:1px solid black;
 }
 .Aside {
-    position: relative;
+    // position: relative;
     height: 100%;
     left: 0;
     top:0;
-    width: 50px;
+    width: 100px;
     border:1px solid black;
 }
 .Footer{
-    background-color: red;
+    background-color: rgb(165, 155, 155);
 }
