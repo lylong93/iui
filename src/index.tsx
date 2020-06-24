@@ -1,16 +1,19 @@
 import {Button,Radio,Magic,World} from '../packages/index'
-import React,{useState} from 'react';
+import React,{useState,useEffect} from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
 import defalut from '../style/default.json';
-const {Header,Main,Footer,Aside,Layout} = World
+const {Header,Main,Footer,Aside,Layout,change} = World
 function App () {
-    const cha = () => {
-        document.body.style.setProperty('--main-bg-color', defalut['--main-bg-color']); 
-    }
+    useEffect(() => {
+        change()
+      });
+
     return (
         <World>
-             <Header></Header>
+             <Header>
+                 <Button name="dd"></Button>
+             </Header>
             <Layout>
                 <Aside></Aside>
                 <Main></Main>

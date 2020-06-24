@@ -1,4 +1,5 @@
 import React,{useRef,useEffect} from "react";
+import change  from './change';
 import classNames  from 'classnames';
 import btnClass from './style'
 import './style.scss'
@@ -6,11 +7,10 @@ import styleClass from './style.scss.json'
 
 const creat = ({name}:any) => {
     const style = classNames(styleClass[name])
-    let falg = true
     return (props:any) => {
         return (
             <div className={style}>
-                {name==='Layout' ? '' :name}
+                {/* {name==='Layout' ? '' :name} */}
                 {props.children}
             </div>
         )
@@ -36,5 +36,5 @@ World.Footer = Footer
 World.Main = Main
 World.Aside = Aside
 World.Layout = Layout
-
+World.change = change
 export default World
