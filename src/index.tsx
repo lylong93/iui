@@ -4,13 +4,19 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 import defalut from '../style/default.json';
 const {Header,Main,Footer,Aside,Layout,change} = World
+
+
 function App () {
     useEffect(() => {
         change()
       });
 
+    const cccc:any =() => {
+        console.log('dddd')
+    }
     return (
         <World>
+            <div onClick={cccc}>eee</div>
              <Header>
                  <Button name="dd"></Button>
              </Header>
@@ -19,6 +25,7 @@ function App () {
                 <Main></Main>
             </Layout>
             <Footer></Footer>
+             {/* <Magic/> */}
         </World>
     )
 }
