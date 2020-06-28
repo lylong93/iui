@@ -8,24 +8,23 @@ const {Header,Main,Footer,Aside,Layout,change} = World
 
 function App () {
     useEffect(() => {
-        change()
+        // change()
       });
-
-    const cccc:any =() => {
-        console.log('dddd')
+    const dd = () => {
+        console.log('dd')
     }
     return (
         <World>
-            <div onClick={cccc}>eee</div>
-             <Header>
+             <Button name="dd" click={dd} size="min"></Button>
+            {/* <div onClick={cccc}>eee</div> */}
+             {/* <Header>
                  <Button name="dd"></Button>
              </Header>
             <Layout>
                 <Aside></Aside>
                 <Main></Main>
             </Layout>
-            <Footer></Footer>
-             {/* <Magic/> */}
+            <Footer></Footer> */}
         </World>
     )
 }
