@@ -6,6 +6,8 @@ const style = (ddd:any) => {
     return classNames(styleClass['time'],{
         [`${styleClass['wrapper-one']}`]: ddd,
         [`${styleClass['wrapper-tow']}`]: !ddd,
+        [`${styleClass['font-one']}`]: ddd,
+        [`${styleClass['font-tow']}`]: !ddd,
     })
     
 }

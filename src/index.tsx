@@ -3,8 +3,8 @@ import React,{useState,useEffect} from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
 import defalut from '../style/default.json';
-const {Header,Main,Footer,Aside,Layout,change} = World
 
+const {Header,Main,Footer,Aside,Layout,change} = World
 
 function App () {
     useEffect(() => {
@@ -15,12 +15,14 @@ function App () {
     }
     return (
         <World>
-             {/* <Button name="dd" click={dd} size="min"></Button> */}
-            <Menu index="1">
+             <Button click={dd} size="min">
+                 文字
+             </Button>  
+            {/* <Menu index="1">
                 <Menu.item title="1"></Menu.item>
                 <Menu.item title="2"></Menu.item>
                 <Menu.item title="3"></Menu.item>
-            </Menu>
+            </Menu> */}
             {/* <div onClick={cccc}>eee</div> */}
              {/* <Header>
                  <Button name="dd"></Button>

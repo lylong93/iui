@@ -2,9 +2,10 @@ import React from 'react'
 import './index.scss'
 import dd from './style'
 
+import Mzu from '../Mzu'
 function Button (props:any) {
     const [ddd, setName] = React.useState(true)
-    const {name,click,size}  = props
+    const {children,click,size}  = props
     const style = dd(ddd)
 
     const mousedown =() => {
@@ -16,9 +17,11 @@ function Button (props:any) {
     }
 
     return (
-        <div className={style}  onMouseDown={mousedown} onMouseUp={mouseup}>
-            {name}
-        </div>
+            <Mzu>
+                <div className={style}  onMouseDown={mousedown} onMouseUp={mouseup}>
+                    {children}
+                </div>
+            </Mzu>
     )
 }
 export default Button
