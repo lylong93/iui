@@ -1,0 +1,31 @@
+@import '../../style/time.scss';
+
+.Menu {
+    display: flex;
+    width: 30%;
+    height: 40px;
+    align-items:center;
+    // background: linear-gradient(to bottom right,rgb(255, 255, 255), rgb(231, 228, 228));
+    // /* box-shadow:inset 3px 3px 1px grey; */
+    // box-shadow: inset -0.5px -1px 1px  #fff,
+    //             inset 1px 1px 3px  grey;
+    background: linear-gradient(to bottom right,rgb(255, 255, 255), rgb(231, 228, 228));
+    box-shadow: -1px -1px 3px  #fff,
+                3px 3px 3px  grey;
+
+}
+.MenuItem {
+    width: 40px;
+    height: 30px;
+    margin: 0 10px;
+    text-align: center;
+    background: linear-gradient(to bottom right,rgb(255, 255, 255), rgb(231, 228, 228));
+    box-shadow: -1px -1px 3px  #fff,
+                3px 3px 3px  grey;
+}
+.activ {
+    background: linear-gradient(to bottom right,rgb(255, 255, 255), rgb(231, 228, 228));
+    /* box-shadow:inset 3px 3px 1px grey; */
+    box-shadow: inset -0.5px -1px 1px  #fff,
+                inset 1px 1px 3px  grey;
+}
