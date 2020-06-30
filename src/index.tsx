@@ -1,4 +1,4 @@
-import {Button,Radio,Magic,World,Menu} from '../packages/index'
+import {Button,Radio,Magic,World,Menu,Kaleido} from '../packages/index'
 import React,{useState,useEffect} from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
@@ -15,9 +15,10 @@ function App () {
     }
     return (
         <World>
-             <Button click={dd} size="min">
+             {/* <Button click={dd} size="min">
                  文字
-             </Button>  
+             </Button> */}
+             <Kaleido></Kaleido>
             {/* <Menu index="1">
                 <Menu.item title="1"></Menu.item>
                 <Menu.item title="2"></Menu.item>
