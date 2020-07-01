@@ -14,25 +14,22 @@ function App () {
         console.log('dd')
     }
     return (
-        <World>
-             {/* <Button click={dd} size="min">
-                 文字
-             </Button> */}
-             <Kaleido></Kaleido>
+        <World>             
             {/* <Menu index="1">
                 <Menu.item title="1"></Menu.item>
                 <Menu.item title="2"></Menu.item>
                 <Menu.item title="3"></Menu.item>
             </Menu> */}
             {/* <div onClick={cccc}>eee</div> */}
-             {/* <Header>
-                 <Button name="dd"></Button>
+             <Header>
+                  <Button click={dd} size="min"></Button>
              </Header>
             <Layout>
                 <Aside></Aside>
                 <Main></Main>
+                <Kaleido></Kaleido>
             </Layout>
-            <Footer></Footer> */}
+            <Footer></Footer>
         </World>
     )
 }
