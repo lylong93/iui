@@ -15,8 +15,7 @@ const Mzu = (props:any) => {
     return (
         <MyContext.Consumer>
             {value => (
-                <div>
-                    {value.name}
+                <div style={{margin:'20px 0'}}>
                     {children}
                 </div>
             )}

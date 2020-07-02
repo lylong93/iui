@@ -20,14 +20,22 @@ function App () {
                 <Menu.item title="2"></Menu.item>
                 <Menu.item title="3"></Menu.item>
             </Menu> */}
-            {/* <div onClick={cccc}>eee</div> */}
-             <Header>
-                  <Button click={dd} size="min"></Button>
-             </Header>
+            <Header>
+                
+            </Header>
             <Layout>
-                <Aside></Aside>
+                <Aside>
+                    {/* <Button click={dd} size="min">1</Button>
+                    <Button click={dd} size="min">2</Button>
+                    <Button click={dd} size="min">3</Button>
+                    <Button click={dd} size="min">4</Button>
+                    <Button click={dd} size="min">5</Button>
+                    <Button click={dd} size="min">6</Button>
+                    <Button click={dd} size="min">7</Button>
+                    <Button click={dd} size="min">8</Button> */}
+                </Aside>
                 <Main></Main>
-                <Kaleido></Kaleido>
+                {/* <Kaleido></Kaleido> */}
             </Layout>
             <Footer></Footer>
         </World>
