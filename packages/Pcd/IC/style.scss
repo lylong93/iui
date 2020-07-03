@@ -1,0 +1,9 @@
+.wrapper {
+    border:1px solid red;
+    height: 50px;
+    width: 100px;
+    &::after {
+        content: '1';
+        border:1px solid blue;
+    }
+}
