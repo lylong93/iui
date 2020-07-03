@@ -1,9 +1,25 @@
-.wrapper {
-    border:1px solid red;
-    height: 50px;
-    width: 100px;
-    &::after {
-        content: '1';
-        border:1px solid blue;
-    }
+
+.w {
+    height: 30px;
+    width: 80px;
+    line-height: 30px;
+    border-top:1px solid rgb(230, 226, 226);
+    border-bottom:6px solid rgb(230, 226, 226);
+    border-left:1px solid rgb(230, 226, 226);
+    border-right:6px solid rgb(230, 226, 226);
+    background:rgb(165, 159, 159);
+    border-image: url("http://photoshopvip.net/wp-content/uploads/2013/03/20fe1693dfcf61f530927ddbb3bff8c9.jpg") 1 1 round;
 }
+.s {
+    // border:2px outset grey;
+    box-sizing: border-box;
+    // border:3px groove rgb(230, 226, 226);
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    box-shadow: 3px 3px 1px  grey;
+    // &::after {
+    //     content: '1';
+    //     border:1px solid blue;
+    // }
+}   
