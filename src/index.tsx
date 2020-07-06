@@ -36,7 +36,7 @@ function App () {
                     <Button click={dd} size="min">8</Button> */}
                 </Aside>
                 <Main>
-                    <Zoom></Zoom>
+                    {/* <Zoom></Zoom> */}
                 </Main>
                 {/* <Kaleido></Kaleido> */}
             </Layout>
