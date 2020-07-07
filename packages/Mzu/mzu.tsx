@@ -7,7 +7,6 @@ const  MyContext = React.createContext(
     }
 );
 
-
 const Mzu = (props:any) => {
     const {children}  = props
     // const render  =  () => children
