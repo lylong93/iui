@@ -1,4 +1,4 @@
-import {Button,Radio,Magic,World,Menu,Kaleido,Pcd,Zoom} from '../packages/index'
+import {Button,Radio,Magic,World,Menu,Kaleido,Pcd,Zoom,Tree} from '../packages/index'
 import React,{useState,useEffect} from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
@@ -25,6 +25,7 @@ function App () {
             </Header>
             <Layout>
                 <Aside>
+                    <Tree></Tree>
                     {/* <Pcd></Pcd> */}
                     {/* <Button click={dd} size="min">1</Button>
                     <Button click={dd} size="min">2</Button>
