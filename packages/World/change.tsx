@@ -7,6 +7,5 @@ const change = () => {
     }else {
         document.body.style.setProperty('--main-bg-color', 'red'); 
     }
-    
 }
 export default change
