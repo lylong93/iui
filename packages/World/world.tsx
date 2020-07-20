@@ -18,6 +18,7 @@ const creat = ({name}:any) => {
 }
 
 function World (props:any) {
+    change()
     return (
         <div className={btnClass}>
             {props.children}

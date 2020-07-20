@@ -40,12 +40,13 @@ module.exports = {
         use:[
           'style-loader',
           'css-loader',
+          // 'typings-for-css-modules-loader?modules&sass',
           {
             loader:'postcss-loader',  
             options: {
               ident: 'postcss',
               plugins: [
-                require('tailwindcss'),
+                // require('tailwindcss'),
                 require('autoprefixer'),
                 require('postcss-modules')({
                   generateScopedName: "[name]__[local]___[hash:base64:5]",

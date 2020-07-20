@@ -1,11 +1,25 @@
-import defalut from '../../style/default.json';
 import config from '../../config/index';
+
+import  '../../style/common/theme/dark.scss';
+import dark from '../../style/common/theme/dark.scss.json';
+
+import '../../style/common/theme/default.scss';
+import def from '../../style/common/theme/default.scss.json';
+
+import '../../style/common/theme/light.scss';
+import light from '../../style/common/theme/light.scss.json';
+
+const style = 'dark'
+
+let obj = {
+    'dark':dark,
+    'def':def,
+    'light':light
+}
+
+console.log('dddd',obj[style]['bg-color'])
+
 const change = () => {
-    if(config.time  === 'am') {
-        document.body.style.setProperty('--main-bg-color', defalut['--main-bg-color']); 
-        document.body.style.setProperty('--main-shadow-start', '-1px -1px 3px #fff,3px 3px 3px grey');
-    }else {
-        document.body.style.setProperty('--main-bg-color', 'red'); 
-    }
+    document.body.style.setProperty('--main-bg-color', obj[style]['bg-color']); 
 }
 export default change
