@@ -1,8 +1,8 @@
-import {Button,Radio,Magic,World,Menu,Kaleido,Pcd,Zoom,Tree} from '../packages/index'
+import {Button,Radio,Magic,World,Menu,Kaleido,Pcd,Zoom,Tree,Test} from '../packages/index'
 import React,{useState,useEffect} from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
-import defalut from '../style/default.json';
+// import defalut from '../style/default.json';
 
 const {Header,Main,Footer,Aside,Layout,change} = World
 
@@ -14,14 +14,15 @@ function App () {
         console.log('dd')
     }
     return (
-        <World>             
+        <World>   
+                 
             {/* <Menu index="1">
                 <Menu.item title="1"></Menu.item>
                 <Menu.item title="2"></Menu.item>
                 <Menu.item title="3"></Menu.item>
             </Menu> */}
             <Header>
-                
+                <Test>but</Test>  
             </Header>
             <Layout>
                 <Aside>
