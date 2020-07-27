@@ -1,6 +1,6 @@
 import React,{useRef,useState} from "react";
-import {Wrapper} from './style'
-
+// import Wrapper from './style'
+import './sty.scss'
 function Test (props:any) {
     const [flag, change] = React.useState(true)
     // const Wrapper =getWr(flag)
@@ -9,9 +9,9 @@ function Test (props:any) {
         change(!flag)
     }
     return (
-        <Wrapper onClick={ch} fg={flag}>  
+        <div onClick={ch} className="sty__apddp___QNkWA">  
             {props.children}
-        </Wrapper>
+        </div>
     )
 }
 export default Test
