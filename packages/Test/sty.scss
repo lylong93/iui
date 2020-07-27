@@ -1,5 +1,9 @@
+
+@import './sss.scss';
+
 .apddp {
-    font-size: 20px;
     height: 90px;
-    color:red;
+    color:$red-theme;
+    background:var(--main-ddd-color);
+    border:1px solid var(--accent-color-wrong)
 }

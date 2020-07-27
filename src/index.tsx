@@ -1,4 +1,5 @@
-import {Button,Radio,Magic,World,Menu,Kaleido,Pcd,Zoom,Tree,Test} from '../packages/index'
+import {World,Tree,Test} from '../packages/index'
+// import {Button,Radio,Magic,World,Menu,Kaleido,Pcd,Zoom,Tree,Test} from '../packages/index'
 import React,{useState,useEffect} from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
