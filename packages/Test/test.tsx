@@ -2,7 +2,7 @@ import React,{useRef,useState, useEffect} from "react";
 import srapper from './style'
 import './sty.scss'
 function Test (props:any) {
-    console.log('srapper',srapper)
+    // console.log('srapper',srapper)
     const [flag, change] = React.useState(true)
     // const Wrapper =getWr(flag)
 

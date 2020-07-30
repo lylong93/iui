@@ -1,0 +1,12 @@
+@import './common/theme/default.scss';
+
+:root {
+    --main-bg-color:#{$background-color};
+}
+
+.world {
+    height: 100vh;
+    background-color: var(--main-bg-color);
+    display: flex;
+    flex-direction: column;
+}

@@ -1,23 +1,13 @@
 import React,{useRef,useEffect} from "react";
-const my = require('./my.css')
-import change  from './change';
-import classNames  from 'classnames';
-import btnClass from './style'
-import './style.scss'
-import styleClass from './style.scss.json'
-import styled from 'styled-components'
-console.log('btnClass',btnClass)
-console.log('my',my)
-
-
-const Button  = styled.div`
-background: red;`
+import st from './style'
+import style from  '../../style/all.scss.json'
 
 const creat = ({name}:any) => {
-    const style = classNames(styleClass[name])
+    st
+    // const style = classNames(styleClass[name])
     return (props:any) => {
         return (
-            <div className={style}>
+            <div >
                 {/* {name==='Layout' ? '' :name} */}
                 {props.children}
             </div>
@@ -26,9 +16,8 @@ const creat = ({name}:any) => {
 }
 
 function World (props:any) {
-    // change()
     return (
-        <div  className={btnClass}>
+        <div  className={style.world}>
             {props.children}
         </div>
     )
@@ -45,5 +34,4 @@ World.Footer = Footer
 World.Main = Main
 World.Aside = Aside
 World.Layout = Layout
-World.change = change
 export default World

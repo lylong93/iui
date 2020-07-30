@@ -1,5 +1,4 @@
 import React from 'react'
-import './index.scss'
 import dd from './style'
 
 import Mzu from '../Mzu'
@@ -17,11 +16,11 @@ function Button (props:any) {
     }
 
     return (
-            <Mzu>
-                <div className={style}  onMouseDown={mousedown} onMouseUp={mouseup}>
-                    {children}
-                </div>
-            </Mzu>
+        <Mzu>
+            <div className={style}  onMouseDown={mousedown} onMouseUp={mouseup}>
+                {children}
+            </div>
+        </Mzu>
     )
 }
 export default Button

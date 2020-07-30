@@ -13,12 +13,7 @@
 
 //  export default Wrapper
 
-
 import './sty.scss'
-
-// var declaration = document.styleSheets[0];
-
-
 
 // Append <style> element to <head>
 var styleEl = document.createElement('style');
@@ -32,7 +27,7 @@ const srapper = {
 var styleSheet:any = styleEl.sheet;
 
 styleSheet.insertRule('.mytest { font-weight: bold }', 0);
-console.log('ddddddd',document.styleSheets)
+// console.log('ddddddd',document.styleSheets)
 
-console.log('cssscssscsss',styleSheet)
+// console.log('cssscssscsss',styleSheet)
 export default srapper

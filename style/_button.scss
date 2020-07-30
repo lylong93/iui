@@ -1,0 +1,11 @@
+.button {
+    color:red;
+    border-radius: $radius;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    background: linear-gradient(to bottom right,rgb(255, 255, 255), rgb(231, 228, 228));
+    box-shadow:-1px -1px 3px #fff,3px 3px 3px grey;
+}
