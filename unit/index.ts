@@ -1,2 +1,2 @@
  
-export {default as change} from './change.tsx'
+export {default as change} from './change'

@@ -1,6 +1,6 @@
 import React,{useRef,useState, useEffect} from "react";
-import srapper from './style'
-import './sty.scss'
+// import srapper from './style'
+// import './sty.scss'
 function Test (props:any) {
     // console.log('srapper',srapper)
     const [flag, change] = React.useState(true)
@@ -20,7 +20,7 @@ function Test (props:any) {
     //     // console.log('stylestylestylestylestylestyle',document.body.style.getPropertyValue("--main-ddd-color"))
     // })
     return (
-        <div onClick={ch} className="mytest" style={srapper} id="ddd">  
+        <div onClick={ch} className="mytest" id="ddd">  
             {props.children}
         </div>
     )

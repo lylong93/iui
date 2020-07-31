@@ -1,7 +1,7 @@
-import './index.scss'
-import styleClass from './index.scss.json'
+// import './index.scss'
+// import styleClass from './index.scss.json'
 import classNames from 'classnames';
-
+var  styleClass = {}
 // const style = (ddd:any) => {
 //     return classNames(styleClass['Kaleido'])
     

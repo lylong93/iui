@@ -1,6 +1,6 @@
 import classNames from 'classnames';
-import './index.scss';
-import styleClass from './index.scss.json'
 
-
+var  styleClass ={
+    
+}
 export default classNames(styleClass['mzu'])

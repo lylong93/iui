@@ -13,7 +13,7 @@
 
 //  export default Wrapper
 
-import './sty.scss'
+// import './sty.scss'
 
 // Append <style> element to <head>
 var styleEl = document.createElement('style');

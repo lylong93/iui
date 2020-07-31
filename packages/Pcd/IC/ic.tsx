@@ -1,11 +1,13 @@
 import React from 'react'
-import './style.scss'
-import styleClass from './style.scss.json'
+// import './style.scss'
+// import styleClass from './style.scss.json'
 import classNames from 'classnames';
 import style from '../../Mzu/style';
 import { relative } from 'path';
 import { right } from '../../Kaleido/style';
-
+var  styleClass = {
+    
+}
 const w = classNames(styleClass['w'])
 const s = classNames(styleClass['s'])
 

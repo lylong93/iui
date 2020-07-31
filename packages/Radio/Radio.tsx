@@ -1,6 +1,5 @@
 import React,{useRef,useEffect, Children} from "react";
 import { Chart } from '@antv/g2';
-import './index.css'
 function  Radion () {
         const El :any= useRef(null);
         const rect = useRef(null);

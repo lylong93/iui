@@ -1,7 +1,9 @@
-import './style.scss'
-import styleClass from './style.scss.json'
+// import './style.scss'
+// import styleClass from './style.scss.json'
 import classNames from 'classnames';
+let styleClass ={
 
+}
 // const style = classNames(styleClass['three'])
 const wrapper = classNames(styleClass['wrapper'])
 // const pan = classNames(styleClass['pan'])
