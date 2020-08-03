@@ -1,4 +1,4 @@
-import {Button,Radio,Magic,World,Menu,Kaleido,Pcd,Zoom,Tree,Test} from '../packages/index'
+import {Button,Radio,Magic,World,Menu,Kaleido,Pcd,Zoom,Tree,Test,Tab} from '../packages/index'
 import React,{useState,useEffect} from 'react';
 import ReactDOM from 'react-dom';
 
@@ -19,11 +19,18 @@ function App () {
     return (
 
         <World>
-            <Button>1</Button>
-            <Button>2</Button>
+            {/* <Button click={dd}> 1</Button> */}
+            <Tab>
+                <Tab.pan lable="1">1</Tab.pan>
+                <Tab.pan lable="2">2</Tab.pan>
+                <Tab.pan lable="3">3</Tab.pan>
+            </Tab>
+                {/* <tab-pan></tab-pan> */}
+            
+            {/* <Button>2</Button>
             <Button>3</Button>
             <Button>4</Button>
-            <Button>5</Button>
+            <Button>5</Button> */}
         </World>
         // <World>   
         //     {/* <Menu index="1">

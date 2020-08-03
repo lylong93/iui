@@ -1,32 +1,25 @@
 import React, { useEffect } from 'react'
 import dd from './style'
-
 import Mzu from '../Mzu'
-import { setInterval } from 'timers'
-function Button (props:any) {
-    const [ddd, setName] = React.useState(true)
+interface ButtonValue {
+    children?: string;
+    click?:any;
+    size?:string
+}
+function Button (props:ButtonValue) {
+    const [mouseStyle, changeStyle] = React.useState(true)
     let time = 6
     const {children,click,size}  = props
-    let style = dd(ddd,time)
+
+    let style = dd(mouseStyle,time,size)
 
     const mousedown =() => {
-        setName(false)
+        changeStyle(false)
     }
     const mouseup =() => {
-        props.click()
-        setName(true)
+        click()
+        changeStyle(true)
     }
-    
-    // useEffect(()=> {
-    //     const con = () => {
-    //         time--
-    //         if(time<-6) {
-    //             time = 6
-    //         }
-    //         style = dd(ddd,time)
-    //     }
-    //     setInterval(con,500)
-    // })
     
     return (
         <Mzu>

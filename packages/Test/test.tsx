@@ -1,10 +1,6 @@
 import React,{useRef,useState, useEffect} from "react";
-// import srapper from './style'
-// import './sty.scss'
 function Test (props:any) {
-    // console.log('srapper',srapper)
     const [flag, change] = React.useState(true)
-    // const Wrapper =getWr(flag)
 
     const ch =() => {
         // change(!flag)
@@ -26,3 +22,8 @@ function Test (props:any) {
     )
 }
 export default Test
+
+
+// 完善分档提取功能，增加回显，编辑 100%
+// 添加优化几个配置功能项 100%
+// 修改测试问题 条件格式需求分析，页面编写 5%

@@ -28,6 +28,5 @@ const menuItemtyle = (item:any) => {
 export const menuStyle = styleClass['Menu']
 // export const menuItemtyle = styleClass['MenuItem']
 
-
 export {menuItemtyle}
 export default style

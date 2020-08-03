@@ -20,7 +20,6 @@ export const tran = classNames(styleClass['tran'])
 export const running = classNames(styleClass['running'])
 export const paused = classNames(styleClass['paused'])
 
-
 export const top = classNames(styleClass['top'],styleClass['side'])
 export const bottom = classNames(styleClass['bottom'],styleClass['side'])
 export const left = classNames(styleClass['left'],styleClass['side'])
