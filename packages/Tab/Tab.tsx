@@ -3,14 +3,12 @@ import style from './style'
 
 
 function Tab (prop:any) {
-
-    console.log('prop',prop)
     const {table,eve,pan} = style()
     const [curPan,charPan] = useState(1)
+
     const sel =(event:any) => {
         const cur = event.target
         charPan(cur.dataset.tab) 
-        console.log('cur',curPan)
     }
     return (
         <div onClick={sel} >
@@ -19,7 +17,6 @@ function Tab (prop:any) {
                 <div data-tab="2" className={eve}>tab2</div> 
                 <div data-tab="3" className={eve}>tab3</div>
             </div>
-            
             <div className={pan}>
                 {
                     prop.children.find((item: any)=> {
@@ -30,7 +27,6 @@ function Tab (prop:any) {
         </div>
         )
 }
-
 
 function TabPan (prop:any) {
     return (
