@@ -1,0 +1,39 @@
+.wrapper {
+    border:1px solid red;
+    height: 30px;
+    width: 70px;
+    border-radius: 15px;
+    margin: 10px;
+    position: relative;
+}
+.btn {
+    background:rgb(148, 143, 143);
+    border-radius: 50%;
+    height: 38px;
+    width: 38px;
+    transition: left 0.5s;
+    cursor: pointer;
+}
+.btndisabled {
+    cursor: not-allowed;;
+}
+.offbtn{
+    position: absolute;
+    top:-4px;
+    left:-3px;
+}
+.onbtn {
+    position: absolute;
+    top:-4px;
+    left:33px;
+}
+.offtip {
+    position: absolute;
+    right: 6px;
+    top:4px;
+}
+.ontip {
+    position: absolute;
+    left: 6px;
+    top:4px;
+}

@@ -1,7 +1,6 @@
-import {Button,Radio,Magic,World,Menu,Kaleido,Pcd,Zoom,Tree,Test,Tab,Input} from '../packages/index'
+import {Button,Radio,Magic,World,Menu,Kaleido,Pcd,Zoom,Tree,Test,Tab,Input,Checkbox,Switch} from '../packages/index'
 import React,{useState,useEffect} from 'react';
 import ReactDOM from 'react-dom';
-
 
 import  '../style/all.scss'
 // import './index.scss';
@@ -13,21 +12,18 @@ function App () {
     useEffect(() => {
         // change()
     });
-    const dd = () => {
-        console.log('dd')
-    }
     return (
 
         <World>
-            <Input></Input>
+            <Switch active="on" inactive="off" ></Switch>
+            {/* <Input></Input> */}
             {/* <Button click={dd}> 1</Button> */}
             {/* <Tab>
                 <Tab.pan lable="1">1</Tab.pan>
                 <Tab.pan lable="2">2</Tab.pan>
                 <Tab.pan lable="3">3</Tab.pan>
             </Tab> */}
-                {/* <tab-pan></tab-pan> */}
-            
+            {/* <tab-pan></tab-pan> */}
             {/* <Button>2</Button>
             <Button>3</Button>
             <Button>4</Button>
