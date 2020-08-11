@@ -1,4 +1,4 @@
-import {Button,Radio,Magic,World,Menu,Kaleido,Pcd,Zoom,Tree,Test,Tab,Input,Checkbox,Switch} from '../packages/index'
+import {Button,Radio,Magic,World,Menu,Kaleido,Pcd,Zoom,Tree,Test,Tab,Input,Checkbox,Switch,Slider} from '../packages/index'
 import React,{useState,useEffect} from 'react';
 import ReactDOM from 'react-dom';
 
@@ -15,7 +15,8 @@ function App () {
     return (
 
         <World>
-            <Switch active="on" inactive="off" ></Switch>
+            <Slider></Slider>
+            {/* <Switch active="on" inactive="off" ></Switch> */}
             {/* <Input></Input> */}
             {/* <Button click={dd}> 1</Button> */}
             {/* <Tab>
