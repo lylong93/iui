@@ -15,7 +15,7 @@ function App () {
     return (
 
         <World>
-            <Slider></Slider>
+            <Button></Button>
             {/* <Switch active="on" inactive="off" ></Switch> */}
             {/* <Input></Input> */}
             {/* <Button click={dd}> 1</Button> */}
