@@ -7,7 +7,7 @@ interface ButtonValue {
     size?:string
 }
 
-let time  = 15
+let time  = 6
 //24
 // 6-18 am  0-12
 // 18-24 pm  0-12
@@ -30,14 +30,14 @@ function Button (props:ButtonValue) {
     // useEffect(()=> {
     //     setInterval(()=> {
     //     if(time === 18) {
-    //         time = 12
+    //         time = 6
     //     }
     //     time = time + 1
 
     //     // ccg(!cg)
-    //     console.log(time)
+    //     // console.log(time)
     //     style= dd(mouseStyle,time,size)
-    //     },1000)
+    //     },500)
     // })
     
     return (

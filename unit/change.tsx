@@ -20,32 +20,32 @@ const getShadowStyle = (selectorText:string,time:number,state:boolean) => {
             yr = 0
             break;
         case 7:
-            xl = -2 
-            yl = 0
-            xr = 6
-            yr = 0
+            xl = -1.6
+            yl = -0.3
+            xr = 4
+            yr = 2
             break;          
         case 8:
-            xl = -2 
-            yl = 0
-            xr = 6
-            yr = 0
+            xl = -1.3
+            yl = -0.6
+            xr = 4
+            yr = 4
             break;
         case 9:
-            xl = 1
-            yl = 1
+            xl = -1
+            yl = -1
             xr = 3
             yr = 6
             break;
         case 10:
-            xl = 0.3 
-            yl = 0.6
+            xl = -0.3 
+            yl = -0.6
             xr = 2
             yr = 4
             break;
         case 11:
-            xl = 0.6
-            yl = 0.3
+            xl = -0.6
+            yl = -0.3
             xr = 1
             yr = 2
             break;
@@ -96,8 +96,6 @@ const getShadowStyle = (selectorText:string,time:number,state:boolean) => {
     }
 
 
-
-    
     // am 7
 
 
