@@ -7,7 +7,7 @@ interface ButtonValue {
     size?:string
 }
 
-let time  = 6
+let time  = 13
 //24
 // 6-18 am  0-12
 // 18-24 pm  0-12
@@ -25,6 +25,9 @@ function Button (props:ButtonValue) {
     const mouseup =() => {
         // console.log('mouseup')
         // click()
+        if(click) {
+            click()
+        }
         changeStyle(true)
     }
     // useEffect(()=> {

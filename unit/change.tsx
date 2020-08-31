@@ -5,13 +5,11 @@ interface LabelledValue {
 }
 
 const getShadowStyle = (selectorText:string,time:number,state:boolean) => {
-    let ytime = Math.abs(time)
-    let rotime = -time/3
+    // let ytime = Math.abs(time)
+    // let rotime = -time/3
     // am 0 上午 6
     let rule,xl,yl,xr,yr
-
     
-
     switch (time) {
         case 6:
             xl = -2 
