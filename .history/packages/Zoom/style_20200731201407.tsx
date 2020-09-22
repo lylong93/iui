@@ -3,7 +3,7 @@ import classNames from 'classnames';
 var styleClass = {
     
 }
-const style = () => {
+const style = (ddd:any) => {
     return classNames(styleClass['wrapper'])
 }
 

@@ -13,7 +13,7 @@
             current_location_lat = position.coords.latitude;
             current_location_lon = position.coords.longitude;
            }, function (error) {
-            //if error occurred by google api
+//if error occurred by google api
               $.getJSON("http://ipinfo.io", function (ipinfo) {
                 var latLong = ipinfo.loc.split(",");
                 current_location_lat = latLong[0];
